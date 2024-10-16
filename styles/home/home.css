@@ -1,0 +1,377 @@
+@import "/styles/contact/contact.css";
+@import "/styles/nav-bar/nav-bar.css";
+@import "/styles/contact/contact.css";
+@import "/styles/blog-page/blog-page.css";
+@import "/styles/parent-page/parent-page.css";
+@import "/styles/elements/elements.css";
+body,
+html {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.618;
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background: linear-gradient(to right, #b32281, #d53176);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 90px;
+  height: 500px;
+  min-height: 150px;
+  z-index: -1;
+  position: relative;
+  font-size: 25px;
+}
+
+.hero-container {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/images/parallax_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/images/parallax_2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.hero-container .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Roboto", serif;
+  z-index: 2;
+}
+.hero-container .hero-content span {
+  font-size: 67px;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  display: block;
+}
+.hero-container .hero-content p {
+  font-size: 20px;
+  margin-top: 35px;
+}
+.hero-container .hero-see-more {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.hero-container .hero-see-more button {
+  padding: 15px 33px 15px 33px;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #d53176;
+  border-radius: 9px;
+  color: white;
+  border: none;
+  white-space: nowrap;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-bottom: 60px;
+}
+.hero-container .hero-see-more button:hover {
+  background-color: #f0f0f0;
+}
+
+.blog-header {
+  width: 200px;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Roboto Slab", "Times New Roman";
+  padding: 80px;
+}
+
+.hestia-blog-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+.hestia-blog-container h1 {
+  display: flex;
+  justify-content: center;
+  color: #444;
+  font-size: 50px;
+  margin: 20px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px;
+}
+.hestia-blog-container .hestia-blog-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+}
+.hestia-blog-container .hestia-blog-titles .category .title {
+  font-family: "Roboto Slab", "Times New Roman";
+  font-size: 18px;
+  color: #444;
+}
+.hestia-blog-container .hestia-blog-titles .category-one {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: #55175a;
+}
+.hestia-blog-container .hestia-blog-titles .category-two {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: #2ab9c0;
+}
+.hestia-blog-container .hestia-blog-titles .category-three {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  color: #d01212;
+}
+.hestia-blog-container .hestia-blog-titles .hestia-blog-title a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.hestia-blog-container .hestia-blog-titles .hestia-blog-description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 768px) {
+  .hestia-blog-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hestia-content-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -70px;
+  max-width: 94vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+.hestia-content-container span {
+  display: flex;
+  justify-content: center;
+  font-size: 46px;
+  font-family: "Roboto Slab", "Times New Roman";
+  font-weight: 600;
+  color: #444;
+  padding-top: 40px;
+}
+
+.hestia-stand-for-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.responsive-label {
+  text-align: center;
+  flex: 1;
+  margin: 100px;
+  color: #444;
+  font-style: "Roboto Slab";
+}
+.responsive-label img {
+  margin-bottom: 30px;
+  height: 80px;
+}
+.responsive-label .h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto-slab";
+  padding-bottom: 30px;
+  color: #444;
+}
+.responsive-label p {
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.hestia-about-hero {
+  position: relative;
+  background: linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.5)), url("/images/contact.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 60px;
+}
+.hestia-about-hero .hestia-about-text {
+  flex: 1;
+  margin-right: 50px;
+  margin-left: 70px;
+  z-index: 2;
+  text-wrap: balance;
+  padding: 0;
+}
+.hestia-about-hero .hestia-about-text span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: white;
+  z-index: 2;
+}
+.hestia-about-hero .hestia-about-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+  line-height: 1.6;
+}
+.hestia-about-hero .cards-image {
+  align-self: flex-start;
+  padding-right: 100px;
+  padding-top: 100px;
+  max-width: 40%;
+  height: auto;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.get-in-touch-hero {
+  position: relative;
+  background: linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.5)), url("/images/contact.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 250px;
+  color: white;
+  padding: 50px;
+}
+.get-in-touch-hero span {
+  padding-left: 50px;
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  color: white;
+  z-index: 2;
+}
+.get-in-touch-hero .description {
+  padding-left: 50px;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.get-in-touch-hero .description .icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.get-in-touch-hero .description .icon-text i {
+  padding-left: 50px;
+  font-size: 24px;
+  margin-right: 5px;
+}
+.get-in-touch-hero .description .icon-text h4 {
+  padding-left: 50px;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+.get-in-touch-hero .description p {
+  padding-left: 50px;
+  color: white;
+  font-size: 20px;
+  z-index: 5;
+}
+
+footer {
+  background-color: #2d2d2d;
+  height: 60px;
+  padding: 40px 0;
+  padding-top: 20px;
+  color: #fff;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+footer .footer-content .left {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-content .left a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #999;
+  font-weight: 300;
+}
+footer .footer-content .left a:hover {
+  font-weight: 300;
+  text-decoration: underline;
+}
+footer .footer-content .right h5 {
+  margin: 0;
+  color: #999;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 30px 0 26px;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,10 @@
+.headings {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -70px;
+  max-width: 80vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}/*# sourceMappingURL=elements.css.map */

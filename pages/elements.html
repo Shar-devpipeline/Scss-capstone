@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hestia Preview</title>
+    <link rel="stylesheet" href="/styles/home/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="/home.html">Hestia</a>
+      </div>
+      <div class="navbar-links-wrapper">
+        <div class="navbar-label">
+          <a href="/home.html">Home</a>
+        </div>
+        <div class="navbar-label">
+          <a href="/pages/blog.html">Blog</a>
+        </div>
+        <div class="navbar-label">
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <span class="anchor" id="more-button">More</span>
+        <div class="more-button"></div>
+      </div>
+    </div>
+    <header>
+      <h1>Elements</h1>
+      <p>Published by <strong>Theme Admin</strong> on September 5, 2008</p>
+    </header>
+    <main class="headings" style="padding: 20px 100px">
+      <section class="opening-paragraph">
+        <p>
+          The purpose of this HTML is to help determine what default settings
+          are with CSS...
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="heading-sizes">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>HEADING 5</h5>
+        <h6>HEADING 6</h6>
+        <p><a href="#">[top]</a></p>
+      </section>
+
+      <section class="paragraph">
+        <hr />
+        <h2>Paragraph</h2>
+        <p>
+          Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
+          elit...
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing
+          elit...
+        </p>
+        <p><a href="#">[top]</a></p>
+        <hr />
+      </section>
+
+      <section class="list-types">
+        <h1>List Types</h1>
+        <h3>Definition List</h3>
+        <dl>
+          <dt>Definition List Title</dt>
+          <dd>This is a definition list division</dd>
+        </dl>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <p><a href="#">[top]</a></p>
+        <hr />
+      </section>
+
+      <section class="forms">
+        <h2>Forms</h2>
+        <form class="mainform" id="form1" method="post" action="">
+          <fieldset>
+            <legend><b>Legend</b></legend>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+            <h2>Form Element</h2>
+            <label for="text-field">Text Field:</label>
+            <input type="text" id="text-field" />
+
+            <label for="text-area">Text Area:</label>
+            <textarea id="text-area" rows="2" cols="20"></textarea>
+
+            <label for="select-element">Select Element:</label>
+            <select name="select-element">
+              <option value="one">Option 1</option>
+              <option value="two">Option 2</option>
+              <option value="three">Option 3</option>
+            </select>
+
+            <label>Radio Buttons:</label>
+            <input type="radio" name="radio-button" value="radio-one" /> Radio 1
+            <input type="radio" name="radio-button" value="radio-two" /> Radio 2
+
+            <label>Checkboxes:</label>
+            <input type="checkbox" name="checkboxes" value="checkbox-one" />
+            Checkbox 1
+            <input type="checkbox" name="checkboxes" value="checkbox-two" />
+            Checkbox 2
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+
+            <label for="file-input">File Input:</label>
+            <input type="file" name="file" />
+
+            <input type="reset" value="Clear" />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+        <p><a href="#">[top]</a></p>
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="tables">Tables</h2>
+        <table>
+          <tr>
+            <th>Table Header 1</th>
+            <th>Table Header 2</th>
+            <th>Table Header 3</th>
+          </tr>
+          <tr>
+            <td>Division 1</td>
+            <td>Division 2</td>
+            <td>Division 3</td>
+          </tr>
+        </table>
+        <p><a href="#">[top]</a></p>
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="misc">Misc Stuff - abbr, acronym, pre, code, sub, sup, etc.</h2>
+        <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet...</p>
+        <pre>Lorem ipsum dolor sit amet...</pre>
+        <blockquote>
+          "This stylesheet is going to help so freaking much." -Blockquote
+        </blockquote>
+        <p><a href="#">[top]</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="left">
+          <div class="about">
+            <a href="#">About</a>
+          </div>
+          <div class="about">
+            <a href="/pages/parent-page.html">Parent Page</a>
+          </div>
+        </div>
+        <div class="right">
+          <h5>Hestia | Developed by Themelsle</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

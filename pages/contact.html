@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hestia Preview</title>
+    <link rel="stylesheet" href="/styles/home/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-label navbar-logo">
+        <a href="#">Hestia</a>
+      </div>
+      <div class="navbar-links-wrapper">
+        <div class="navbar-label">
+          <a href="/home.html">Home</a>
+        </div>
+        <div class="navbar-label">
+          <a href="/pages/blog.html">Blog</a>
+        </div>
+        <div class="navbar-label">
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <span class="anchor" id="more-button">More</span>
+        <div class="more-button"></div>
+      </div>
+    </div>
+
+    <div class="iframe-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8105.862350063992!2d26.085806892168048!3d44.449654274048335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5499e689fd%3A0xec3a46eabd83835b!2sStrada%20Povernei%2020%2C%20Bucure%C8%99ti%2C%20Romania!5e0!3m2!1sen!2sus!4v1727976688435!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="content">
+        <form class="contact-form">
+          <h1>Send us a message</h1>
+          <div class="form-group">
+            <input type="text" id="first-name" placeholder="Your name.." />
+          </div>
+          <div class="form-group">
+            <input type="text" id="last-name" placeholder="Your last name.." />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="message"
+              style="height: 200px"
+              placeholder="Write something.."
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            id="submit-button"
+            value="Submit"
+          />
+        </form>
+
+        <div class="contact-info">
+          <div class="find-us">
+            <i class="fa-solid fa-map"></i>
+            <div class="text-container">
+              <h3>Find us at the office</h3>
+              <br />
+              <p>Strada Povernei, nr 20 Bucharest Romania</p>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="find-us">
+            <i class="fas fa-phone-alt"></i>
+            <div class="text-container">
+              <h3>John Doe</h3>
+              <br />
+              <p>+40 712 345 678 Mon - Fri, 8:00-22:00</p>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="find-us">
+            <i class="fa-solid fa-briefcase"></i>
+            <div class="text-container">
+              <h3>Legal Information</h3>
+              <br />
+              <p>John Doe Co. Fiscal Code: 12345678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="left">
+          <div class="about">
+            <a href="#">ABOUT</a>
+          </div>
+          <div class="about">
+            <a href="/pages/parent-page.html">PARENT PAGE</a>
+          </div>
+        </div>
+        <div class="right">
+          <h5>Hestia | Developed by Themelsle</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

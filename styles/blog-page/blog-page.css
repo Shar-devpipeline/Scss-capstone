@@ -1,0 +1,95 @@
+.blog-page-container {
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 92vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  z-index: 3;
+  margin-top: -70px;
+}
+.blog-page-container .blog-content-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 70px;
+  padding-left: 100px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-page-container .blog-content-titles .category {
+  display: block;
+  width: 100%;
+}
+.blog-page-container .blog-content-titles .category .blog-title a {
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto Slab", "Times New Roman";
+  font-size: 30px;
+  color: #333;
+}
+.blog-page-container .blog-content-titles p {
+  width: 100%;
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  text-align: left;
+}
+.blog-page-container .blog-content-titles .author p {
+  font-size: 14;
+  color: #555;
+}
+.blog-page-container .blog-content-titles .category-one {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #85228c;
+}
+.blog-page-container .blog-content-titles .category-two {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2ab9c0;
+}
+.blog-page-container .blog-content-titles .category-three {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d01212;
+}
+.blog-page-container .blog-content-titles .category-four {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d09712;
+}
+.blog-page-container .blog-content-titles .category-five {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d01212;
+}
+.blog-page-container .blog-content-titles .category-six {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2a8e02;
+}
+.blog-page-container .blog-content-titles .category-seven {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #85228c;
+}/*# sourceMappingURL=blog-page.css.map */

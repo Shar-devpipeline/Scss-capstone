@@ -1,0 +1,90 @@
+$start-color: #b32281;
+$end-color: #d53176;
+$gradient-bg: linear-gradient(to right, $start-color, $end-color);
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  padding: 25px 20px;
+  box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px -2px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+
+  .navbar-logo {
+    a {
+      margin-right: auto;
+      font-size: 22px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding-left: 60px;
+
+      &:hover {
+        color: #ff4081;
+      }
+    }
+  }
+
+  .navbar-links-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .navbar-label {
+      margin: 0 15px;
+
+      a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: #ff4081;
+        }
+      }
+    }
+
+    .navbar-label:first-child {
+      margin-right: auto;
+    }
+
+    .anchor {
+      font-size: 18px;
+      color: #fff;
+      background-color: #e73470;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e73470;
+      }
+    }
+  }
+}
+
+#more-button {
+  cursor: pointer;
+  background: $gradient-bg;
+  text-transform: capitalize;
+  color: white;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 300;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken(#d53176, 10%);
+  }
+}

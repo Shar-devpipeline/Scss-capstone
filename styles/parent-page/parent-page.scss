@@ -1,0 +1,36 @@
+$start-color: #b32281;
+$end-color: #d53176;
+$gradient-bg: linear-gradient(to right, $start-color, $end-color);
+
+.page-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -70px;
+  max-width: 92vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  z-index: 3;
+  font-size: 18px;
+
+  .page-content {
+    padding-top: 7%;
+    padding-left: 18%;
+    padding-right: 18%;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .comments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #444;
+  }
+}
