@@ -71,12 +71,10 @@ header {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-family: "Roboto", serif;
   z-index: 2;
 }
 .hero-container .hero-content span {
   font-size: 67px;
-  font-family: "Roboto", serif;
   font-weight: bold;
   display: block;
 }
@@ -100,7 +98,6 @@ header {
   color: white;
   border: none;
   white-space: nowrap;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   margin-bottom: 60px;
 }
 .hero-container .hero-see-more button:hover {
@@ -108,8 +105,6 @@ header {
 }
 
 .blog-header {
-  width: 200px;
-  margin: 0 auto;
   color: #333;
   text-align: center;
   font-size: 45px;
@@ -121,7 +116,7 @@ header {
 .hestia-blog-container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 80px;
 }
@@ -141,13 +136,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
   margin: 20px;
-}
-.hestia-blog-container .hestia-blog-titles .category .title {
+  color: #444;
   font-family: "Roboto Slab", "Times New Roman";
   font-size: 18px;
-  color: #444;
+  flex: 1;
 }
 .hestia-blog-container .hestia-blog-titles .category-one {
   text-transform: uppercase;
@@ -174,13 +167,15 @@ header {
 .hestia-blog-container .hestia-blog-titles .hestia-blog-description {
   font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 990px) {
   .hestia-blog-container {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
-
 .hestia-content-container {
   position: relative;
   margin: 0 auto;
@@ -199,6 +194,7 @@ header {
   font-weight: 600;
   color: #444;
   padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .hestia-stand-for-wrapper {
@@ -208,12 +204,17 @@ header {
   width: 100%;
 }
 
+@media (max-width: 990px) {
+  .hestia-stand-for-wrapper {
+    flex-direction: column;
+  }
+}
 .responsive-label {
   text-align: center;
   flex: 1;
   margin: 100px;
   color: #444;
-  font-style: "Roboto Slab";
+  font-family: "Roboto Slab";
 }
 .responsive-label img {
   margin-bottom: 30px;
@@ -234,7 +235,6 @@ header {
 }
 
 .hestia-about-hero {
-  position: relative;
   background: linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.5)), url("/images/contact.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -243,15 +243,12 @@ header {
   min-height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: white;
   padding: 60px;
 }
 .hestia-about-hero .hestia-about-text {
-  flex: 1;
   margin-right: 50px;
   margin-left: 70px;
-  z-index: 2;
   text-wrap: balance;
   padding: 0;
 }
@@ -267,7 +264,6 @@ header {
 .hestia-about-hero .hestia-about-text p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
-  margin-top: 0;
   line-height: 1.6;
 }
 .hestia-about-hero .cards-image {
@@ -275,19 +271,23 @@ header {
   padding-right: 100px;
   padding-top: 100px;
   max-width: 40%;
-  height: auto;
-  flex-shrink: 0;
-  z-index: 2;
 }
 
+@media (max-width: 1160px) {
+  .hestia-about-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hestia-about-hero .cards-image {
+    width: 80%;
+  }
+}
 .get-in-touch-hero {
-  position: relative;
   background: linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.5)), url("/images/contact.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 250px;
   color: white;
   padding: 50px;
 }
@@ -298,16 +298,11 @@ header {
   font-weight: bold;
   margin-bottom: 90px;
   color: white;
-  z-index: 2;
 }
 .get-in-touch-hero .description {
   padding-left: 50px;
-  position: relative;
-  z-index: 2;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 .get-in-touch-hero .description .icon-text {
   display: flex;
@@ -343,8 +338,6 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
   padding-top: 20px;
   padding-left: 100px;
   padding-right: 100px;
